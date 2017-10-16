@@ -1,7 +1,7 @@
 FROM registry.ott-consult.de/oc/java8:latest
 MAINTAINER Joern Ott <joern.ott@ott-consult.de>
 
-ENV JENKINS_VERSION=2.60.3-1.1 \
+ENV JENKINS_VERSION=2.73.2-1.1 \
     APP_USER=jenkins \
     APP_UID=20001 \
     APP_GROUP=jenkins \
