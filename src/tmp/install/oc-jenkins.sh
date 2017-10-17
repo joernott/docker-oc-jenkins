@@ -18,5 +18,6 @@ EOF
 install_jenkins_repo
 add_repos graphviz
 create_user_and_group
-install_software jenkins-${JENKINS_VERSION} graphviz graphviz-lang-java graphviz-plugins
+yum list available 'graphviz*'
+install_software jenkins-${JENKINS_VERSION} graphviz-${GRAPHVIZ_VERSION} graphviz-lang-java-${GRAPHVIZ_VERSION} graphviz-plugins-${GRAPHVIZ_VERSION}
 cleanup
