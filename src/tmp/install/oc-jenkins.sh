@@ -19,5 +19,5 @@ install_jenkins_repo
 add_repos graphviz
 create_user_and_group
 yum list available 'graphviz*'
-install_software jenkins-${JENKINS_VERSION} graphviz-${GRAPHVIZ_VERSION} graphviz-lang-java-${GRAPHVIZ_VERSION} graphviz-plugins-${GRAPHVIZ_VERSION}
+install_software jenkins-${JENKINS_VERSION} graphviz-${GRAPHVIZ_VERSION}.el7 graphviz-lang-java-${GRAPHVIZ_VERSION}.el7 graphviz-plugins-${GRAPHVIZ_VERSION}.el7
 cleanup
