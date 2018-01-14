@@ -2,7 +2,6 @@
 set -e
 set -x
 
-curl -sSo /tmp/install/functions.sh https://raw.githubusercontent.com/joernott/docker-oc-install-library/master/install_functions.sh
 source /tmp/install/functions.sh
 
 function install_jenkins_repo() {
@@ -16,7 +15,7 @@ EOF
 }
 
 install_jenkins_repo
-add_repos graphviz
+add_repos graphviz-development
 create_user_and_group
 install_software jenkins-${JENKINS_VERSION} graphviz graphviz-lang-java graphviz-plugins git
 cleanup
