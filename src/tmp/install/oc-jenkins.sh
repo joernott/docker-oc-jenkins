@@ -17,5 +17,5 @@ EOF
 install_jenkins_repo
 add_repos graphviz-development
 create_user_and_group
-install_software jenkins-${JENKINS_VERSION} graphviz graphviz-lang-java graphviz-plugins git
+install_software jenkins-${JENKINS_VERSION} graphviz graphviz-lang-java graphviz-plugins git openssh-askpass
 cleanup
