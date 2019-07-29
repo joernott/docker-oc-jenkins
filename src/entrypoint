@@ -1,6 +1,6 @@
 #!/bin/bash
 
-JAVA=/usr/java/latest/jre/bin/java
+JAVA=/usr/bin/java
 
 JAVA_CMD="${JAVA} $JENKINS_JAVA_OPTIONS -DJENKINS_HOME=$JENKINS_HOME -jar /usr/lib/jenkins/jenkins.war"
 PARAMS="--webroot=/var/cache/jenkins/war"
